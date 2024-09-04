@@ -1,0 +1,156 @@
+body {
+  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 72px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.125em;
+  color: #333;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+h1 {
+  font-size: 2.5em
+}
+
+h2 {
+  font-size: 2em
+}
+
+h3 {
+  font-size: 1.5em
+}
+
+a {
+  text-decoration: none;
+  color: #09f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.guess {
+  padding-top: 250px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.guess > .title > img {
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100px;
+}
+
+.attr-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.guess-title {
+  background-color: #fffd;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.guess-attr {
+  background-color: #fffd;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.guess-attr:first-child {
+  margin-left: 0px;
+}
+
+.guess-attr:last-child {
+  margin-right: 0px;
+}
+
+.guess-attr > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.guess-attr > div:first-child {
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
+
+.guess-amount {
+  text-align: right;
+}
+
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+}
+
+.endgame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  align-items: space-between;
+  border-radius: 5px;
+  color: #000;
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  div {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.game-image {
+  width: 50%;
+}
+
+.game-title {
+  padding-bottom: 20px;
+}
+
+.credits {
+  font-size: 0.5em;
+}
